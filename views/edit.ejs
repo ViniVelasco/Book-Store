@@ -1,0 +1,14 @@
+<% include partials/header.ejs %>
+    <div class="ui main text container segment">
+        <div class="ui huge header">New Book</div>
+            <form class="ui form" action="/books/<%= book._id %>?_method=PUT" method="POST">
+                <input type="text" value="<%= book.title %>" name="book[title]" />
+                <input type="text" value="<%= book.image %>" name="book[image]" />
+                <input type="text" value="<%= book.author %>" name="book[author]" />
+                <input type="number" value="<%= book.price %>" name="book[price]" />
+                <textarea name="book[description]"><%= book.description %></textarea>
+                <input class="ui black basic button" type="submit" />
+            </form>
+        </div>
+    </div>
+<% include partials/footer.ejs %>

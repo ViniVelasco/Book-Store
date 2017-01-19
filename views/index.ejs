@@ -1,0 +1,35 @@
+<% include partials/header.ejs %>
+<h1>Welcome to BookStore</h1>
+
+<div class="ui main text container index">
+    <div class="ui huge header">BookStore</div>
+        <div class="ui top attached segment">
+            <div class = "ui divided items">
+                
+                <% books.forEach(function(book) { %>
+                <div class="item">
+                
+                    
+                    <div class="image">
+                        <image src="<%= book.image %>" />
+                    </div>
+                        <div class="content">
+                            <h2><%= book.title %></h2>
+                            <p><%- book.description.substring(0, 150) %>...</p>
+                            <a href="/books/<%= book._id %>" class="ui black basic big button">VIEW</a>
+                            <a href="/books/<%= book._id %>/edit" class="ui grey basic big button">EDIT</a>
+                            <form id="delete" action="/books/<%= book.id %>?_method=DELETE" method="POST">
+                                <button class="ui red basic big button">DELETE</button>
+                            </form>
+                         </div>
+                            
+                       
+                </div>
+                <% }) %>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<% include partials/footer.ejs %>

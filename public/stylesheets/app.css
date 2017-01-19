@@ -1,0 +1,40 @@
+.ui.header, h1, h2, h3, h4, h5, h6, p {
+    font-family: Arsenal, sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+h2, h3, h4 {
+    font-size: 1.2em;
+}
+
+#delete {
+    display: inline;
+}
+
+i.icon {
+    font-size: 2em;
+}
+
+.container.main {
+    margin-top: 6em;
+}
+
+.container.main.text.index {
+    margin-top: 2em;
+}
+
+.item h2, h3, h4{
+    margin-bottom: 0;
+}
+
+.item h3, h4 {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.ui.centered.rounded.image {
+    margin-bottom: 0.3em;
+}

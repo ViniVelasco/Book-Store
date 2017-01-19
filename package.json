@@ -1,0 +1,19 @@
+{
+  "name": "book-store",
+  "version": "1.0.0",
+  "description": "A book-store simple app, made with nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinícius Velasco",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "express-sanitizer": "^1.0.1",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.7.7"
+  }
+}

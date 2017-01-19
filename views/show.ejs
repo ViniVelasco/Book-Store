@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+    <div class="ui main text container segment">
+         <div class="ui top attached">
+             <div class="item">
+                 <img  class="ui centered rounded image" src="<%= book.image %>" />
+                  <div class="description">
+                      <h2>Title: <%= book.title %></h2>
+                      <h3>Author: <em><%= book.author %></em></h3>
+                      <h4>Price: $<%= book.price %></h4>
+                      <p><%- book.description %></p>
+                          <a href="/books" class="ui purple basic big button">BACK</a>
+                            <a href="/books/<%= book._id %>/edit" class="ui grey basic big button">EDIT</a>
+                            <form id="delete" action="/books/<%= book.id %>?_method=DELETE" method="POST">
+                                <button class="ui red basic big button">DELETE</button>
+                            </form>
+                  </div>
+            </div>
+        </div>
+    </div>
+     
+<% include ./partials/footer %>
